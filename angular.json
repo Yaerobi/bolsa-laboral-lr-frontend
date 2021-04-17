@@ -24,9 +24,14 @@
               "src/assets"
             ],
             "styles": [
+              "/home/eamanu/yaerobi_dev/bolsa-laboral-lr-frontend/node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "/home/eamanu/yaerobi_dev/bolsa-laboral-lr-frontend/node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "/home/eamanu/yaerobi_dev/bolsa-laboral-lr-frontend/node_modules/popper.js/dist/popper.min.js",
+              "/home/eamanu/yaerobi_dev/bolsa-laboral-lr-frontend/node_modules/jquery/dist/jquery.min.js"
+            ]
           },
           "configurations": {
             "production": {
