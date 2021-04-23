@@ -1,0 +1,18 @@
+[
+    {
+      "email": "eamanu@yaerobi.com",
+      "name": "Emmanuel",
+      "surname": "Arias",
+      "password": "what is that",
+      "user_id": "eamanu",
+      "country_city_id": "1"
+    },
+    {
+        "email": "eamanu2@yaerobi.com",
+        "name": "Emmanuel",
+        "surname": "Arias",
+        "password": "what is that",
+        "user_id": "eamanu2",
+        "country_city_id": "1"
+    }
+]
