@@ -1,11 +1,12 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpResponse } from '@angular/common/http';
 
 import { environment } from '../../environments/environment';
+import { User } from "../_models//users"
+import { Observable } from 'rxjs';
 
 
 const endPoint = 'users.json';
-const endPoint2 = 'assets/data/users.json';
 
 @Injectable({
   providedIn: 'root'
@@ -15,8 +16,9 @@ export class UsersService {
   constructor(private http: HttpClient) {
   }
  
-  getUserData(){
-    //const values =  this.http.get(`${environment.apiUrl}` + endPoint);
-    return this.http.get(endPoint2);
+  getUserData(username: string): Observable<HttpResponse<User>> {
+    //TODO: use username on the query
+    return this.http.get<User>(
+      `${environment.apiUrl}` + endPoint, {observe: 'response'});
   }
 }
